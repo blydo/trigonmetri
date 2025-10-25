@@ -128,10 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="medved.cpp" />
+    <ClCompile Include="point.cpp" />
+    <ClCompile Include="Russia.cpp" />
+    <ClCompile Include="section.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="medved.h" />
+    <ClInclude Include="point.hpp" />
+    <ClInclude Include="Russia.hpp" />
+    <ClInclude Include="section.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
