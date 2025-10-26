@@ -9,7 +9,10 @@ class Point
 public:
 
 	Point();
-
+	Point(const Point& point) {
+		this->Setx(point._x);
+		this->Sety(point._y);
+	}
 
 	void PrintPosition();
 
@@ -18,16 +21,10 @@ public:
 
 	float Gety();
 
-	
-	Point Getnext();
-	
+
 	void Setx(float x);
 	
 	void Sety(float y);
-
-	
-	void Setnext(Point next);
-	
 
 	void Plase();
 	
@@ -35,7 +32,7 @@ public:
 private:
 	float _x;
 	float _y;
-	Point* _next;
+	
 };
 
 

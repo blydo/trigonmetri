@@ -57,9 +57,7 @@
 		return _y;
 
 	}
-	Point Point::Getnext() {
-		return *_next;
-	}
+	
 	void Point::Setx(float x) {
 		_x = x;
 	}
@@ -68,9 +66,7 @@
 		_y = y;
 
 	}
-	void Point::Setnext(Point next) {
-		*_next = next;
-	}
+	
 	
 	void Point:: Plase() {
 		std::cout << _x << "\t" << _y;
