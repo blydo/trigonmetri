@@ -7,25 +7,54 @@
 
 
 	void Point::PrintPosition() {
-		int z = _y + 5;
-		int c = _x + 5;
+		int z = _y > 0 ? _y + 5 : -_y + 5;
+		int c = _x > 0 ? _x + 5 : -_x + 5;
+
+		system("cls");
 		
 			for (int i = z; i >= -z; i--)
 			{
+
+				for (int i = 0; i < z; i++)
+				{
+					std::cout << "  ";
+				}
+
+				std::cout << "|" << "\n";
+
 				if (i == _y)
 				{
-					for (int i = 0; i < c; i++)
+					if (_x < 0)
+					{
+						for (;c > 1; c--)
+						{
+							
+							if (-c == _x)
+							{
+								std::cout << "O ";
+								continue;
+							}
+							std::cout << "  ";
+						}
+						std::cout << "  ";
+						std::cout << "|" << "\n";
+						
+					}
+					for (int i = 0; i < z; i++)
 					{
 						std::cout << "  ";
 					}
-					std::cout << "|";
+					std::cout << "|" << "\n";
 					
-					for (int i = 0; i < _x; i++)
+					if (_x > 0)
 					{
-						std::cout << "  ";
+						for (int i = 0; i < _x; i++)
+						{
+							std::cout << "  ";
+						}
+						std::cout << "O" << "\n";
+						continue;
 					}
-					std::cout << "O" << "\n";
-					continue;
 				}
 
 				if (i == 0)
@@ -38,14 +67,9 @@
 					std::cout << "\n";
 				}
 
-
-				for (int i = 0; i < c; i++)
-				{
-					std::cout << "  ";
-				}
-				
-				std::cout << "|" << "\n";
 			}
+			
+			
 		
 	}
 	float Point::Getx() {

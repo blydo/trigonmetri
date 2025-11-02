@@ -13,6 +13,14 @@ Triangle::Triangle(const Section & ab, const Section & bc, const Section & ac) {
 
 
 };
+
+
+float  Triangle:: Perimeter() {
+	return _ab.Lenght() + _bc.Lenght() + _ac.Lenght();
+}
+
+
+
 Point Triangle::Geta() {
 	return _a;
 }

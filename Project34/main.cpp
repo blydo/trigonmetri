@@ -12,15 +12,18 @@ int main() {
 
 	
 	Point yashapedik;
-	yashapedik.Setx(6);
-	yashapedik.Sety(6);
+	yashapedik.Setx(2);
+	yashapedik.Sety(7);
 	
 	Point yashanatural;
-	yashanatural.Setx(8);
-	yashanatural.Sety(8);
+	yashanatural.Setx(6);
+	yashanatural.Sety(4);
 
+	Section krytoi(yashapedik, yashanatural);
+	std::cout << krytoi.Lenght();
 
-	yashanatural.PrintPosition();
+	
+
 
 
 
@@ -55,6 +58,7 @@ Point* second;
 Методы: 
 Нахождение площади
 Нахождение периметра 
+Нахождение высоты
 Метод, определяющий тип треугольника
 Геттеры
 Сеттеры

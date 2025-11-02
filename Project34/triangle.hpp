@@ -34,6 +34,15 @@ public:
 	void Setb(Point b);
 	
 	void Setc(Point c);
+
+	float Perimeter();
+
+	
+	float height() {
+		Point O;
+
+	}
+	
 	
 
 private:

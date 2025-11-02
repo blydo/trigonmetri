@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 #include "point.hpp"
 #include "section.hpp"
@@ -16,6 +17,9 @@
 		this->_first = section._first;
 		this->_second = section._second;
 	}
+
+
+	
 
 
 	Point Section:: GetFirst() {
@@ -56,4 +60,34 @@
 				return res;
 			}
 		}
+
+
+		float a;
+		float b;
+		
+		if (_first.Getx() > _second.Getx())
+		{
+			a = _first.Getx() - _second.Getx();
+		}
+		else
+		{
+			a = _second.Getx() - _first.Getx();
+		}
+
+		if (_first.Gety() > _second.Gety())
+		{
+			b = _first.Gety() - _second.Gety();
+		}
+		else
+		{
+			b = _second.Gety() - _first.Gety();
+	
+		}
+
+		res = pow(a, 2) + pow(b, 2);
+		return sqrt(res);
+
+
+			// pow(int num, int power)
+			// sqrt(int num) 
 	}

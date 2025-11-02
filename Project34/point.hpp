@@ -1,7 +1,9 @@
 #pragma once
 #ifndef POINT_HPP
 
+
 #include <iostream>
+#include <Windows.h>
 
 
 class Point
