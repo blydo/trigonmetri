@@ -1,5 +1,5 @@
 #include "section.hpp"
-
+#include "TypeTriangle.cpp"
 
 
 class Triangle
@@ -36,6 +36,58 @@ public:
 	void Setc(Point c);
 
 	float Perimeter();
+	float Square() {
+		float h;
+	
+		if (TypeOf() == Equilateral)
+		{
+
+		
+		}
+		else if (TypeOf() == Isosceles)
+		{
+			if (_ab.Lenght() > _bc.Lenght() )
+			{
+				h = _bc.Lenght() / 2;
+			}
+			else if (_bc.Lenght() > _ac.Lenght())
+			{
+				h = _ac.Lenght() / 2;
+			}
+			else
+			{
+				h = _ab.Lenght() / 2;
+			}
+
+		}
+		else if (TypeOf() == Rectangular)
+		{
+
+		}
+
+	}
+
+	TypeTriangle TypeOf() {
+
+		if (_ab.Lenght() == _bc.Lenght() && _ab.Lenght() == _ac.Lenght() && _bc.Lenght() == _ac.Lenght())
+		{
+			return Equilateral;
+		}
+
+		else if (_ab.Lenght() == _bc.Lenght() || _bc.Lenght() == _ac.Lenght() || _ab.Lenght() == _ac.Lenght())
+		{
+			return Isosceles;
+		}
+		
+		else if ( pow(_ab.Lenght(),2) + pow(_bc.Lenght(), 2) == pow(_ac.Lenght(), 2) || pow(_bc.Lenght(), 2) + pow(_ac.Lenght(), 2) == pow(_bc.Lenght(), 2) || pow(_ab.Lenght(), 2) + pow(_ac.Lenght(), 2) == pow(_bc.Lenght(), 2))
+		{
+			return Rectangular;
+		}
+		else
+		{
+			return Default;
+		}
+	}
 
 	
 	float height() {
@@ -50,7 +102,6 @@ private:
 	Section _ab;
 	Section _bc;
 	Section _ac;
-
 
 };
 

@@ -132,6 +132,7 @@
     <ClCompile Include="Russia.cpp" />
     <ClCompile Include="section.cpp" />
     <ClCompile Include="triangle.cpp" />
+    <ClCompile Include="TypeTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="point.hpp" />
