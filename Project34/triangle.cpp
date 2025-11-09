@@ -5,6 +5,7 @@ Triangle::Triangle(const Point& a, const Point& b, const Point& c) {
 	_a = a;
 	_b = b;
 	_c = c;
+
 };
 Triangle::Triangle(const Section & ab, const Section & bc, const Section & ac) {
 	_ab = ab;

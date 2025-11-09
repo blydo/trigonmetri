@@ -3,12 +3,15 @@
 
 #include "point.hpp"
 #include "section.hpp"
+#include "triangle.hpp"
+
 
 
 
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
+
 
 	
 	Point yashapedik;
@@ -19,10 +22,17 @@ int main() {
 	yashanatural.Setx(6);
 	yashanatural.Sety(4);
 
+	Point yashalimpop;
+	yashalimpop.Setx(5);
+	yashalimpop.Sety(8);
+
 	Section krytoi(yashapedik, yashanatural);
 	std::cout << krytoi.Lenght();
 
+	Triangle  (yashapedik, yashanatural, yashalimpop)
+
 	
+
 
 
 
