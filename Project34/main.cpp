@@ -27,9 +27,12 @@ int main() {
 	yashalimpop.Sety(8);
 
 	Section krytoi(yashapedik, yashanatural);
-	std::cout << krytoi.Lenght();
 
-	Triangle  (yashapedik, yashanatural, yashalimpop)
+
+	Triangle hui(yashapedik, yashanatural, yashalimpop);
+	std::cout << hui.Square() << "\n";
+	std::cout << hui.Perimeter();
+
 
 	
 

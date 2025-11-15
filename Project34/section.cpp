@@ -22,12 +22,19 @@
 	
 
 
-	Point Section:: GetFirst() {
+	Point Section::GetFirst() {
 		return _first;
 	}
 
-	Point Section:: GetSecond() {
+	Point Section::GetSecond() {
 		return _second;
+	}
+
+	void Section::SetSecond(Point second) {
+		_second = second;
+	}
+	void Section::SetFirst(Point first) {
+		_first = first;
 	}
 
 	float Section::Lenght() {

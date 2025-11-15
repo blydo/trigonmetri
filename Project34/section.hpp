@@ -19,6 +19,11 @@ public:
 	Point GetFirst();
 
 	Point GetSecond();
+
+	void SetFirst(Point first);
+
+	void SetSecond(Point second);
+	
 	
 	float Lenght();
 	
